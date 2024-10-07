@@ -1,0 +1,204 @@
+/* section */
+.section {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(243, 156, 212);
+    margin: 0px;
+}
+/* content  */
+.section .content {
+    position: relative;
+    width: 98%;
+    height: 900px;
+    padding-top: 0px;
+    align-items: center;
+    margin-left: 1%;
+    z-index: 2;
+  
+}
+
+.section .content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    background-image: url("../img/download.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+/* navbar row  */
+.row {
+    width: 100%;
+    height: 80px;
+    margin: 2px auto;
+    z-index: 2;
+    background-color: rgb(246, 146, 212);
+}
+.col_left .img2 {
+    float: left;
+}
+
+.img2 {
+    float: right;
+    height: 50px;
+    width: 50px;
+    margin: 5px 10px;
+    z-index: 2;
+    border-radius: 45%;
+}
+
+
+/* part1  */
+
+.part1 {
+    display: flex;
+    align-items: center; 
+    position: relative;
+}
+
+.pda {
+    margin-right: 10px;
+    width: 80%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.pda p {
+    position: relative; 
+    width: 80%;
+    /* left: 5%; */
+    
+    font-size: medium;
+    text-align: justify;
+}
+
+
+
+.butt button {
+    background-color: rgb(160, 72, 243); /* Green background */
+    border: none;
+    color: white; /* White text */
+    /* Some padding */
+    text-align: center; /* Centered text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Make the button inline-block */
+    font-size: 16px; /* Increase font size */
+    margin: 20px 10px; /* Some margin */
+    cursor: pointer; /* Pointer/hand icon */
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    padding: 20px 30px;
+    margin-left: 25%;
+
+}
+
+.butt button:hover {
+    background-color:rgb(171, 111, 226); /* Darker green on hover */
+}
+
+.img3 {
+    vertical-align: middle; /* Ensures vertical alignment of the image with the text */
+    width: 50%;
+    height: 50%;
+}
+
+
+
+.img4 {
+    opacity: 1;
+    z-index: 2;
+    position: absolute;
+    top: 630px;
+    left: 25%;
+    height: 100px;
+    width: 200px;
+  }
+  
+.hi {
+    left:70%;
+    display: inline;
+}
+
+.img5{
+    opacity: 1;
+    z-index: 2;
+    position: absolute;
+    top: 630px;
+    left: 50%;
+    height: 100px;
+    width: 200px;
+}
+
+
+.part2{
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+.part2 .col3 {
+    align-items: center;
+    position: absolute;
+    left: 32%;
+    top: 200px;
+    width: 25%;
+    padding: 15px;
+ 
+    background-color: #fff;
+}
+.part2 .col3 .row3{
+    align-items: center;
+    text-align: center;
+    
+}
+.part2 .col3 .row3 .p3{
+text-align: justify;
+
+border-style: dashed solid black;
+}
+
+/* Media query for phones */
+@media (max-width: 768px) {
+    .part1 {
+        display: block;
+        width: 100%;
+      
+    }
+
+    .section{
+        width: 100%;
+    }
+
+    .pda {
+        margin: 0px; /* Center .pda block */
+        margin-top: 40px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .pda p {
+        width: 90%; /* Full width on smaller screens */
+        margin: 100x 0px 0px 30px; /* Add space between the paragraph and image */
+        
+    }
+.butt button{
+    align-items: center;
+    margin-left: 20px;
+}
+    .img3 {
+        display: block;
+        margin: 0 auto; /* Center image */
+        width: 80%; /* Adjust as needed for responsive design */
+        height: auto;
+    }
+    .section .content::before {
+       
+        height: 80%;
+      
+    }
+}
